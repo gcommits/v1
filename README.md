@@ -5,6 +5,8 @@
 
 # Gratitude
 
-I am grateful to Brittany Chiang [https://brittanychiang.com/] for providng excellent ideas for what a portfolio website should contain.
+(Vino Rodriguez)[https://github.com/vinorodrigues] wrote an excellent article on implementing the multiple stylesheets (e.g. dark/light mode)
 
-I owe many thanks to Komini [https://komini.se/] for their excellent website design which inspired me.
+(Brittany Chiang)[https://brittanychiang.com/] offered excellent advice for what a portfolio website should contain.
+
+(Komini)[https://komini.se/] is an agency which has an inspiring website design.
