@@ -3,7 +3,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7e306e03-ab5e-42d5-84f4-8d71a0b59a28/deploy-status)](https://app.netlify.com/sites/effulgent-swan-c45780/deploys)
  
-![demo](assets/img/demo.png)
+![demo](assets/img/garrettt.gif)
 
 # Gratitude
 
