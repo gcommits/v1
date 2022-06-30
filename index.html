@@ -4,38 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Garrett Clough is a software engineer and full-stack web developer with experience in Python, Flask, and Vanilla Javascript."/>
-
-<!-- GOOGLE ANALYTICS (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WKYBE3RZSR"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-WKYBE3RZSR');
-</script>
-<!-- END GOOGLE ANALYTICS -->
-<!-- TOGGLE THEME SCRIPT -->
-<script>
-    function toggleTheme() {
-    // Obtains an array of all <link>
-    // elements.
-    // Select your element using indexing.
-    var theme = document.getElementsByTagName('link')[0];
-
-    // Change the value of href attribute 
-    // to change the css sheet.
-    if (theme.getAttribute('href') == 'assets/css/cyborg.css') {
-        theme.setAttribute('href', 'assets/css/lux.css');
-        document.getElementById("toggle").innerHTML = "Lux";
-    } else {
-        theme.setAttribute('href', 'assets/css/cyborg.css');
-        document.getElementById("toggle").innerHTML = "Cyborg"
-    }
-}
-</script>
-<!-- END TOGGLE THEME SCRIPT -->
+<meta name="Description" content="Garrett is a software engineer and full-stack web developer with experience in Python, Flask, and Vanilla Javascript."/>
 
 <link id="theme" rel="stylesheet" href="assets/css/cyborg.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -46,28 +15,14 @@ gtag('config', 'G-WKYBE3RZSR');
 </head>
 <body>
     <div class="container p-10">
-        <!-- START NAVIGATION -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><i class="fa-solid fa-g fa-xl"></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="toggleTheme()">
-                    <label class="form-check-label" for="flexSwitchCheckDefault"><span id="toggle">Cyborg</span></label>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbarColor02">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-g fa-xl"></i></a>
+                <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                         <a class="nav-link active" href="#about">About</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#work">Work</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link active" href="#contact">Contact</a>
                         </li>
@@ -75,8 +30,7 @@ gtag('config', 'G-WKYBE3RZSR');
                 </div>
             </div>
         </nav>
-        <!-- END NAVIGATION -->
-        <!-- BEGIN INTRO -->
+        <!-- 1 -->
         <div class="container">
             <div class="hero-unit m-5">
                 <p class="h6">Hi, my name is</p>
@@ -94,47 +48,52 @@ gtag('config', 'G-WKYBE3RZSR');
                         </div>
                     </div>
                     <div class="cta">
-                        <a class="btn btn-primary" href="https://linkedin.com/in/garrettclough" target="_blank" role="button"><i class="fa-brands fa-linkedin"></i>Connect</a>
+                        <div class="toggle">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="toggleTheme()">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        <!-- END INTRO -->
-
-        <!-- BEGIN ABOUT -->
+        <!-- 1 -->
+        <!-- 2 -->
         <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg align-items-center">                
+            </div>
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="assets/img/garrett.jpeg" class="d-block mx-lg-auto img-thumbnail" alt="Garrett" width="370" height="180" loading="lazy">
+                    <img src="" alt="NASA Photo of the Day" id="img" height="470" width="470" class="d-block mx-lg-auto img-thumbnail">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3" id="about">About</h1>
                     <p class="lead">Hello! My name is Garrett. </p>
                     <p>I am a growth-oriented software engineer with a <span class="text-primary">deep interest in cloud computing</span>. Currently, I am studying for my <span class="text-primary">AWS Developer Certification</span> and building full-stack web applications using Flask.</p>
                     <p>The main technology I've worked with recently is <span class="text-primary">Python</span>.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="https://github.com/garrettclough/" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><i class="fa-brands fa-github"></i>See My Github</button></a>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-2">
+                        <a href="https://github.com/garrettclough/" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><i class="fa-brands fa-github"></i>/garrettclough/</button></a>
                     </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger text-white" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML5/CSS3</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary text-white" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning text-white" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info text-white" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Flask</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success text-white" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                    </div>
+                        </div>
                 </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML5/CSS3</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Flask</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">SQL</div>
-            </div>
         </div>
-        <!-- END ABOUT -->
+        <!-- 2 -->
 
-        <!-- BEGIN CONTACT -->
+        <!-- 3 -->
         <div class="container py-4 text-dark col-md-6 offset-md-3 text-center">
             <div class="row">
                 <h2 id="contact" class="text-center">Get In Touch</h2>
@@ -164,9 +123,9 @@ gtag('config', 'G-WKYBE3RZSR');
             </form>
             </div>
         </div>
-        <!-- END CONTACT -->
+        <!-- 3 -->
 
-        <!-- BEGIN FOOTER -->
+        <!-- 4 -->
         <div class="container">
             <footer class="py-3 my-4">
                 <p class="text-center text-dark">Designed & Built by Garrett Clough</p>
@@ -182,10 +141,11 @@ gtag('config', 'G-WKYBE3RZSR');
                 </div>
             </footer>
         </div>
-        <!-- END FOOTER -->
+        <!-- 4 -->
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
