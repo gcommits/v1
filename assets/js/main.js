@@ -7,8 +7,7 @@ function getFetch(){
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            document.querySelector('img').src = data.hdurl
-
+            document.getElementById('nasa').src = data.hdurl
         })
         .catch(err => {
             console.log('error ${err}')
@@ -19,9 +18,12 @@ function toggleTheme() {
     var theme = document.getElementsByTagName('link')[0];
     if (theme.getAttribute('href') == 'assets/css/cyborg.css') {
         theme.setAttribute('href', 'assets/css/simplex.css');
-        document.getElementById("toggle").innerHTML = "Simplex";
+        document.getElementById("logo").src = "assets/img/light.png";
+        document.getElementById("icon").fill = "black"
     } else {
         theme.setAttribute('href', 'assets/css/cyborg.css');
-        document.getElementById("toggle").innerHTML = "Cyborg"
+        document.getElementById("logo").src = "assets/img/dark.png";
+        document.getElementById("icon").fill = "white"
+
     }
 }

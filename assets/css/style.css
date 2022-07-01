@@ -1,10 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* border: 2px dotted red; */
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    background-color: #509dd1;
-    color: #fff;
-  }
+    background-color: white;
+    color: black;
+}
