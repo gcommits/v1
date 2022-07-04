@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    border: 1px dotted red;
 }
 
 .navbar .navbar-nav .nav-link:hover {

@@ -8,9 +8,12 @@ function getFetch(){
         .then(data => {
             console.log(data)
             document.getElementById('nasa').src = data.hdurl
+            document.getElementById('nasaInfo').innerHTML = ('Title: ') + data.title
+            document.getElementById('copyright').innerHTML = ('Copyright: ') + data.copyright
+            document.getElementById('explanation').innerHTML = data.explanation
         })
         .catch(err => {
-            console.log('error ${err}')
+            console.log('****error')
         });
     }
 
